@@ -1,0 +1,141 @@
+body {
+  background-color: #ffffff;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.quiz {
+  width: 975px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.question {
+  color: #464646;
+  padding: 10px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.results {
+  background-color: #fff;
+  height: 300px;
+  text-align: center;
+}
+
+.congratulations {
+  background-color: #3393ec;
+  padding: 20px;
+  font-size: 36px;
+  color: #fff;
+}
+
+.results-info {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.answer {
+  width: 48%;
+  background: #fff;
+  border: 2px solid #eee;
+  min-height: 70px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  display: flex;
+  transition: background .3s linear;
+}
+
+.answer:hover {
+  background: #eee;
+}
+
+.answers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.answer-letter {
+  font-size: 30px;
+  background-color: #3393ec;
+  color: #fff;
+  font-weight: 700;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-text {
+  color: #464646;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.correct-answer {
+  border: 2px solid #1ea55b;
+}
+
+.correct-answer .answer-letter {
+  background: #1ea55b;
+}
+
+.wrong-answer {
+  border: 2px solid #ff4141;
+}
+
+.wrong-answer .answer-letter {
+  background: #ff4141;
+}
+
+.next-button {
+  margin: 0 auto;
+  color: #464646;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  width: 320px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 75px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-align: center;
+  transition: background .3s linear;
+  margin-top: 50px;
+}
+
+.next-button:hover {
+  background: #eee;
+}
+
+
+.score {
+  color: #464646;
+  font-size: 18px;
+  width: 200px;
+  margin: 0 auto;
+  font-weight: 600;
+  height: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disabled-answer {
+  pointer-events: none;
+}
